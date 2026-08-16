@@ -1,237 +1,467 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Liste des membres bannis du groupe VRChat VVs.">
-  <title>VVs Bannis VRChat</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bannis VRChat — VVs</title>
+<link rel="shortcut icon" href="icon.png">
+<style>
+  :root{
+    --bg:#0a0a12;
+    --surface:#15151f;
+    --surface2:#1b1b28;
+    --surface3:#20202f;
+    --line:#292939;
+    --text:#e8e6f5;
+    --muted:#7d7a95;
+    --accent:#8a7dff;
+    --accent2:#5de6b0;
+    --danger:#f2576a;
+    --gold:#f4bf42;
+    --radius:14px;
+    --shadow:0 4px 20px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 20% 0%, rgba(124,110,247,0.10), transparent 45%),
+      radial-gradient(circle at 80% 10%, rgba(93,230,176,0.06), transparent 40%),
+      var(--bg);
+    background-attachment:fixed;
+    font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+    color:var(--text);
+    min-height:100vh;
+  }
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--surface3);border-radius:10px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--accent)}
 
-    :root {
-      --bg: #0a0710;
-      --surface: #130e1c;
-      --surface-2: #1b1327;
-      --line: rgba(255,255,255,.10);
-      --text: #f8f1ff;
-      --muted: #a69ab3;
-      --accent: #b96dff;
-      --accent-2: #ff5271;
-      --gold: #f3c969;
-      --danger: #ff6178;
-      --mono: 'DM Mono', ui-monospace, SFMono-Regular, Consolas, monospace;
-      --display: 'Space Grotesk', ui-sans-serif, sans-serif;
-    }
+  .wrap{max-width:900px;margin:0 auto;padding:32px 20px}
+  .top{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .brand img{width:28px;height:28px;border-radius:50%}
+  .brand span{font-weight:700;color:var(--accent);font-size:14px;letter-spacing:.04em}
+  h1{margin:0;font-size:28px;letter-spacing:-.5px}
+  .sub{margin-top:6px;color:var(--muted);font-size:14px}
+  .count{font-weight:700;font-size:13px;white-space:nowrap;color:var(--text);background:var(--surface2);padding:8px 16px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow)}
 
-    * { box-sizing: border-box; }
-    html { min-width: 320px; background: var(--bg); }
-    body {
-      min-height: 100vh;
-      margin: 0;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 8% 0%, rgba(185,109,255,.16), transparent 30rem),
-        radial-gradient(circle at 100% 55%, rgba(255,82,113,.10), transparent 28rem),
-        var(--bg);
-      font-family: var(--display);
-    }
-    body::before {
-      position: fixed; inset: 0; z-index: -1; pointer-events: none; content: "";
-      opacity: .28;
-      background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-      background-size: 48px 48px;
-      mask-image: linear-gradient(to bottom, black, transparent 80%);
-    }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    .wrap { width: min(100% - 32px, 980px); margin: 0 auto; padding: 52px 0 72px; }
-    .top { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
-    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--muted); font: 500 12px var(--mono); letter-spacing: .16em; text-transform: uppercase; }
-    .brand-mark { width: 10px; height: 10px; border-radius: 50%; background: var(--accent-2); box-shadow: 0 0 18px var(--accent-2); }
-    h1 { margin: 12px 0 7px; font-size: clamp(30px, 5vw, 48px); line-height: .98; letter-spacing: -.055em; }
-    .sub { margin: 0; color: var(--muted); font-size: 15px; }
-    .count { flex: 0 0 auto; padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font: 500 12px var(--mono); background: rgba(255,255,255,.035); white-space: nowrap; }
-    .search { position: relative; margin-bottom: 24px; }
-    .search-icon { position: absolute; top: 50%; left: 17px; transform: translateY(-50%); color: var(--accent); font-size: 18px; pointer-events: none; }
-    .search input { width: 100%; padding: 16px 18px 16px 48px; border: 1px solid var(--line); border-radius: 12px; outline: none; color: var(--text); font: 14px var(--display); background: rgba(19,14,28,.84); box-shadow: 0 12px 40px rgba(0,0,0,.16); transition: border-color .2s, box-shadow .2s; }
-    .search input::placeholder { color: #756981; }
-    .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(185,109,255,.13); }
-    .list { display: grid; gap: 15px; }
-    .card { position: relative; overflow: hidden; padding: 20px 22px 18px; border: 1px solid var(--line); border-left: 3px solid var(--danger); border-radius: 14px; background: linear-gradient(125deg, rgba(27,19,39,.98), rgba(16,11,24,.96)); box-shadow: 0 16px 34px rgba(0,0,0,.15); animation: rise .38s both; }
-    .card::after { position: absolute; top: 0; right: 0; width: 180px; height: 1px; content: ""; background: linear-gradient(90deg, transparent, rgba(255,97,120,.65)); }
-    .card-header, .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--muted); font: 11px var(--mono); }
-    .card-header { margin-bottom: 12px; text-transform: uppercase; letter-spacing: .08em; }
-    .status { color: var(--danger); }
-    .card-title { margin-bottom: 18px; font-size: 20px; font-weight: 600; letter-spacing: -.03em; }
-    .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; margin-bottom: 17px; }
-    .field.full { grid-column: 1 / -1; }
-    .field-label { margin-bottom: 5px; color: #796c88; font: 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
-    .field-value { overflow-wrap: anywhere; font-size: 14px; }
-    .field-value a { color: var(--accent); text-decoration: none; }
-    .field-value a:hover { text-decoration: underline; }
-    .avatar { width: 34px; height: 34px; margin-right: 10px; border-radius: 9px; object-fit: cover; vertical-align: middle; background: var(--surface-2); }
-    .history { display: flex; flex-wrap: wrap; gap: 8px; padding: 11px 0 15px; border-top: 1px solid var(--line); font: 12px var(--mono); }
-    .pill { padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--muted); background: rgba(255,255,255,.025); }
-    .pill b { color: var(--text); font-weight: 500; }
-    .pill.kick b, .pill.warn b { color: var(--gold); }
-    .pill.ban b { color: var(--danger); }
-    .footer-row { padding-top: 13px; border-top: 1px solid var(--line); }
-    .profile-btn { display: inline-flex; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid rgba(185,109,255,.35); border-radius: 7px; color: var(--accent); text-decoration: none; font: 12px var(--mono); transition: background .2s, border-color .2s; }
-    .profile-btn:hover { border-color: var(--accent); background: rgba(185,109,255,.10); }
-    .empty { padding: 48px 20px; border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); text-align: center; }
-    .empty strong { display: block; margin-bottom: 7px; color: var(--text); font-size: 17px; }
-    .pages { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; margin-top: 26px; }
-    .pages button { min-width: 36px; height: 36px; padding: 0 9px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); font: 12px var(--mono); background: var(--surface); cursor: pointer; }
-    .pages button:hover, .pages button.active { border-color: var(--accent); color: var(--text); background: rgba(185,109,255,.18); }
-    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-    @media (max-width: 620px) { .wrap { width: min(100% - 24px, 980px); padding-top: 30px; } .top { align-items: start; flex-direction: column; gap: 16px; } .fields { grid-template-columns: 1fr; } .field.full { grid-column: auto; } .card { padding: 17px; } }
-  </style>
+  /* Stats globales */
+  .stats-bar{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-bottom:24px;
+  }
+  .stat-box{
+    background:linear-gradient(180deg,var(--surface),var(--surface2));
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:16px 18px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
+  }
+  .stat-box::before{
+    content:"";
+    position:absolute;top:-30px;right:-30px;
+    width:90px;height:90px;
+    border-radius:50%;
+    pointer-events:none;
+  }
+  .stat-box.ban::before{background:radial-gradient(circle, rgba(242,87,106,0.15), transparent 70%)}
+  .stat-box.kick::before{background:radial-gradient(circle, rgba(244,191,66,0.15), transparent 70%)}
+  .stat-box.warn::before{background:radial-gradient(circle, rgba(93,230,176,0.15), transparent 70%)}
+  .stat-value{font-size:26px;font-weight:800;line-height:1.1}
+  .stat-box.ban .stat-value{color:var(--danger)}
+  .stat-box.kick .stat-value{color:var(--gold)}
+  .stat-box.warn .stat-value{color:var(--accent2)}
+  .stat-label{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:4px}
+
+  .search{position:relative;margin-bottom:16px}
+  .search input{width:100%;height:48px;border:1px solid var(--line);border-radius:12px;padding:0 16px 0 44px;font-size:14px;outline:none;background:var(--surface);color:var(--text);transition:border-color .2s}
+  .search input::placeholder{color:var(--muted)}
+  .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(138,125,255,.15)}
+  .search span{position:absolute;left:15px;top:13px;font-size:18px}
+
+  /* Filtres */
+  .filters{
+    display:flex;
+    gap:12px;
+    margin-bottom:24px;
+    flex-wrap:wrap;
+  }
+  .filters select{
+    flex:1;
+    min-width:150px;
+    height:44px;
+    border:1px solid var(--line);
+    border-radius:10px;
+    background:var(--surface);
+    color:var(--text);
+    padding:0 12px;
+    font-size:13.5px;
+    outline:none;
+    cursor:pointer;
+    transition:border-color .2s;
+  }
+  .filters select:focus,.filters select:hover{border-color:var(--accent)}
+
+  .list{display:grid;gap:16px}
+
+  .card{
+    position:relative;
+    background:linear-gradient(180deg,var(--surface),var(--surface2));
+    border:1px solid var(--line);
+    border-left:4px solid var(--danger);
+    border-radius:var(--radius);
+    padding:18px 20px;
+    box-shadow:var(--shadow);
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    overflow:hidden;
+    animation:fadeIn .35s ease both;
+  }
+  @keyframes fadeIn{
+    from{opacity:0;transform:translateY(6px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+  .card::before{
+    content:"";
+    position:absolute;top:-40px;right:-40px;
+    width:120px;height:120px;
+    background:radial-gradient(circle, rgba(242,87,106,0.15), transparent 70%);
+    pointer-events:none;
+  }
+  .card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 28px rgba(0,0,0,0.45);
+    border-color:#3a3a52;
+  }
+
+  .card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+  .card-header img{width:20px;height:20px;border-radius:50%}
+  .card-header span{font-size:12px;color:var(--muted);font-weight:600}
+  .card-title{font-size:18px;font-weight:700;margin-bottom:16px;color:var(--text)}
+
+  .fields{display:grid;grid-template-columns:1fr 1fr;gap:14px 24px;margin-bottom:16px}
+  .field-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+  .field-value{font-size:14px}
+  .field-value a{color:var(--accent2);text-decoration:none;font-weight:500}
+  .field-value a:hover{text-decoration:underline}
+  .field.full{grid-column:1 / -1}
+  mark{background:rgba(138,125,255,0.35);color:var(--text);border-radius:3px;padding:0 2px}
+
+  .history{display:flex;gap:10px;flex-wrap:wrap;font-size:12.5px;margin-bottom:16px;align-items:center}
+  .history b{color:var(--text)}
+  .history span.pill{padding:4px 10px;border-radius:999px;font-weight:600}
+  .k-kick{color:var(--gold);background:rgba(244,191,66,0.1)}
+  .k-warn{color:var(--gold);background:rgba(244,191,66,0.1)}
+  .k-ban{color:var(--danger);background:rgba(242,87,106,0.1)}
+
+  .detail{background:var(--surface3);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13.5px;color:var(--text);margin-bottom:16px;line-height:1.5}
+
+  .avatar-big{width:100%;max-width:420px;border-radius:10px;display:block;margin-bottom:16px;background:var(--surface3)}
+
+  .footer-row{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--muted);margin-bottom:14px;flex-wrap:wrap;gap:6px;padding-top:12px;border-top:1px dashed var(--line)}
+
+  .profile-btn{
+    display:inline-flex;align-items:center;gap:6px;
+    border:1px solid var(--line);background:var(--surface3);
+    border-radius:8px;padding:10px 16px;color:var(--text);
+    text-decoration:none;font-size:13px;font-weight:500;
+    transition:all .2s ease;
+  }
+  .profile-btn:hover{border-color:var(--accent);background:rgba(138,125,255,0.1);transform:translateX(2px)}
+
+  .empty{text-align:center;padding:48px;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius)}
+
+  .pages{display:flex;justify-content:center;gap:8px;margin-top:28px;flex-wrap:wrap}
+  .pages button{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:8px;padding:9px 14px;cursor:pointer;font-size:13px;transition:all .2s}
+  .pages button.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 0 0 3px rgba(138,125,255,0.2)}
+  .pages button:hover:not(.active){border-color:var(--accent)}
+
+  /* Skeleton loader */
+  .skeleton-card{
+    background:linear-gradient(180deg,var(--surface),var(--surface2));
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:18px 20px;
+    box-shadow:var(--shadow);
+    margin-bottom:16px;
+  }
+  .skel-line{
+    height:14px;
+    border-radius:6px;
+    margin-bottom:12px;
+    background:linear-gradient(90deg, var(--surface3) 25%, var(--line) 50%, var(--surface3) 75%);
+    background-size:200% 100%;
+    animation:shimmer 1.4s infinite;
+  }
+  .skel-line.w60{width:60%}
+  .skel-line.w40{width:40%}
+  .skel-line.w90{width:90%;height:40px;margin-top:8px}
+  @keyframes shimmer{
+    0%{background-position:200% 0}
+    100%{background-position:-200% 0}
+  }
+
+  @media(max-width:600px){
+    .wrap{padding:20px 14px}
+    .fields{grid-template-columns:1fr}
+    .stats-bar{grid-template-columns:1fr}
+    .top{align-items:start}
+    .count{align-self:flex-start}
+    .filters{flex-direction:column}
+    .filters select{width:100%}
+  }
+</style>
 </head>
 <body>
-  <main class="wrap">
-    <header class="top">
-      <div>
-        <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>VVs / modération VRChat</span></div>
-        <h1>Membres bannis</h1>
-        <p class="sub">Registre public des exclusions du groupe.</p>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="brand">
+        <img src="https://cdn.discordapp.com/emojis/1463899019729309885.png" alt="">
+        <span>VVs BOT</span>
       </div>
-      <div class="count" id="count">0 membre</div>
-    </header>
-
-    <div class="search">
-      <span class="search-icon" aria-hidden="true">⌕</span>
-      <label for="search" class="sr-only">Rechercher un membre</label>
-      <input id="search" type="search" autocomplete="off" placeholder="Rechercher par nom ou identifiant VRChat…">
+      <h1>🔴 Membres bannis</h1>
+      <div class="sub">Bannissements actuels du groupe VRChat VVs</div>
     </div>
+    <div class="count" id="count">0 membre</div>
+  </div>
 
-    <section id="list" class="list" aria-live="polite"></section>
-    <nav id="pages" class="pages" aria-label="Pagination"></nav>
-  </main>
+  <div class="stats-bar" id="statsBar">
+    <div class="stat-box ban">
+      <div class="stat-value" id="statBan">0</div>
+      <div class="stat-label">Bans</div>
+    </div>
+    <div class="stat-box kick">
+      <div class="stat-value" id="statKick">0</div>
+      <div class="stat-label">Kicks</div>
+    </div>
+    <div class="stat-box warn">
+      <div class="stat-value" id="statWarn">0</div>
+      <div class="stat-label">Warns</div>
+    </div>
+  </div>
 
-  <script>
-    "use strict";
+  <div class="search">
+    <span>🔎</span>
+    <input id="search" placeholder="Rechercher un utilisateur..." autocomplete="off">
+  </div>
 
-    let BANS = [];
-    const PAGE_SIZE = 10;
-    let page = 1;
-    let filtered = [];
+  <div class="filters">
+    <select id="modFilter">
+      <option value="">Tous les modérateurs</option>
+    </select>
+    <select id="sortBy">
+      <option value="date-desc">Date (plus récent)</option>
+      <option value="date-asc">Date (plus ancien)</option>
+      <option value="bans-desc">Nb de bans (décroissant)</option>
+      <option value="bans-asc">Nb de bans (croissant)</option>
+    </select>
+  </div>
 
-    const list = document.getElementById("list");
-    const pages = document.getElementById("pages");
-    const search = document.getElementById("search");
-    const count = document.getElementById("count");
+  <div id="list" class="list"></div>
+  <div id="pages" class="pages"></div>
+</div>
 
-    /*
-     * Escaping deliberately uses character codes for the five HTML-sensitive
-     * characters. This avoids literal entity strings being altered by copy/paste.
-     */
-    function escapeHtml(value) {
-      const text = String(value ?? "");
-      let output = "";
-      for (const character of text) {
-        switch (character) {
-          case "&": output += String.fromCharCode(38) + "amp;"; break;
-          case "<": output += String.fromCharCode(38) + "lt;"; break;
-          case ">": output += String.fromCharCode(38) + "gt;"; break;
-          case '"': output += String.fromCharCode(38) + "quot;"; break;
-          case "'": output += String.fromCharCode(38) + "#39;"; break;
-          default: output += character;
-        }
-      }
-      return output;
+<script>
+let BANS = [];
+const PAGE_SIZE = 10;
+let page = 1;
+let filtered = [];
+
+const list = document.getElementById("list");
+const pages = document.getElementById("pages");
+const search = document.getElementById("search");
+const count = document.getElementById("count");
+const modFilter = document.getElementById("modFilter");
+const sortBy = document.getElementById("sortBy");
+const statBan = document.getElementById("statBan");
+const statKick = document.getElementById("statKick");
+const statWarn = document.getElementById("statWarn");
+
+function escapeHtml(value){
+  return String(value ?? "").replace(/[&<>"']/g, function(c){
+    switch(c){
+      case '&': return '&';
+      case '<': return '<';
+      case '>': return '>';
+      case '"': return '"';
+      case "'": return ''';
     }
+  });
+}
 
-    function safeUrl(value) {
-      const url = String(value ?? "").trim();
-      return /^https?:\/\//i.test(url) ? url : "";
+function highlight(text, query){
+  const safe = escapeHtml(text);
+  if(!query) return safe;
+  const escQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp('(' + escQuery + ')', 'ig');
+  return safe.replace(re, '<mark>$1</mark>');
+}
+
+function parseDate(str){
+  if(!str) return 0;
+  // essaie de parser des formats du type "16/08/2026" ou "2026-08-16"
+  const parts = String(str).split(/[\/\-]/);
+  if(parts.length === 3){
+    if(parts[0].length === 4){
+      return new Date(+parts[0], +parts[1]-1, +parts[2]).getTime();
+    }else{
+      return new Date(+parts[2], +parts[1]-1, +parts[0]).getTime();
     }
+  }
+  const t = Date.parse(str);
+  return isNaN(t) ? 0 : t;
+}
 
-    function text(value, fallback = "—") {
-      const result = String(value ?? "").trim();
-      return result || fallback;
-    }
+function showSkeleton(){
+  let html = "";
+  for(let i=0;i<3;i++){
+    html += `
+      <div class="skeleton-card">
+        <div class="skel-line w40"></div>
+        <div class="skel-line w60"></div>
+        <div class="skel-line w90"></div>
+      </div>
+    `;
+  }
+  list.innerHTML = html;
+}
 
-    function number(value) {
-      const result = Number(value);
-      return Number.isFinite(result) ? result : 0;
-    }
+async function loadBans(){
+  showSkeleton();
+  try{
+    const res = await fetch("./bans.json", { cache: "no-store" });
+    if(!res.ok) throw new Error(res.status);
+    BANS = await res.json();
+  }catch(err){
+    list.innerHTML = '<div class="empty">⚠️ Impossible de charger les données. Réessaie dans quelques instants.</div>';
+    console.error("Erreur chargement bans.json :", err);
+    return;
+  }
 
-    async function loadBans() {
-      try {
-        const response = await fetch("./bans.json", { cache: "no-store" });
-        if (!response.ok) throw new Error("HTTP " + response.status);
-        const data = await response.json();
-        BANS = Array.isArray(data) ? data : [];
-        filtered = BANS;
-        render();
-      } catch (error) {
-        BANS = [];
-        filtered = [];
-        count.textContent = "Données indisponibles";
-        list.innerHTML = '<div class="empty"><strong>Impossible de charger le registre</strong>Vérifiez que <code>bans.json</code> est bien publié avec cette page.</div>';
-        pages.replaceChildren();
-        console.error("Chargement de bans.json impossible :", error);
-      }
-    }
+  populateModFilter();
+  computeGlobalStats();
+  applyFilters();
+}
 
-    function render() {
-      const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-      if (page > totalPages && totalPages > 0) page = totalPages;
-      const start = (page - 1) * PAGE_SIZE;
-      const items = filtered.slice(start, start + PAGE_SIZE);
-      count.textContent = filtered.length + (filtered.length === 1 ? " membre" : " membres");
+function populateModFilter(){
+  const mods = [...new Set(BANS.map(u => u.moderator).filter(Boolean))].sort();
+  modFilter.innerHTML = '<option value="">Tous les modérateurs</option>' +
+    mods.map(m => `<option value="${escapeHtml(m)}">${escapeHtml(m)}</option>`).join("");
+}
 
-      if (!items.length) {
-        list.innerHTML = '<div class="empty"><strong>Aucun membre trouvé</strong>Essayez un autre nom ou identifiant.</div>';
-      } else {
-        list.innerHTML = items.map((user, index) => {
-          const stats = user && user.stats ? user.stats : {};
-          const avatar = safeUrl(user && user.avatar);
-          const profile = safeUrl(user && user.profile);
-          const avatarHtml = avatar ? '<img class="avatar" src="' + escapeHtml(avatar) + '" alt="" loading="lazy">' : '';
-          const profileHtml = profile ? '<a class="profile-btn" href="' + escapeHtml(profile) + '" target="_blank" rel="noopener noreferrer">Voir le profil <span aria-hidden="true">↗</span></a>' : '';
-          return '<article class="card" style="animation-delay:' + (index * 35) + 'ms">' +
-            '<div class="card-header"><span>VVs Bot · Modération VRChat</span><span class="status">● BAN ACTIF</span></div>' +
-            '<div class="card-title">' + avatarHtml + '🔨 ' + escapeHtml(text(user && user.name, "Membre inconnu")) + '</div>' +
-            '<div class="fields">' +
-              '<div class="field"><div class="field-label">Identifiant VRChat</div><div class="field-value">' + escapeHtml(text(user && user.id)) + '</div></div>' +
-              '<div class="field"><div class="field-label">Date du bannissement</div><div class="field-value">' + escapeHtml(text(user && user.date)) + '</div></div>' +
-              '<div class="field"><div class="field-label">Motif</div><div class="field-value">' + escapeHtml(text(user && user.reason)) + '</div></div>' +
-              '<div class="field"><div class="field-label">Modérateur</div><div class="field-value">' + escapeHtml(text(user && user.moderator)) + '</div></div>' +
-              '<div class="field"><div class="field-label">Membre depuis</div><div class="field-value">' + escapeHtml(text(user && user.memberSince)) + '</div></div>' +
-            '</div>' +
-            '<div class="history"><span class="pill kick">Kick <b>' + number(stats.kick) + '</b></span><span class="pill warn">Warn <b>' + number(stats.warn) + '</b></span><span class="pill ban">Ban <b>' + number(stats.ban) + '</b></span></div>' +
-            '<div class="footer-row"><span>Banni le ' + escapeHtml(text(user && user.date)) + '</span>' + profileHtml + '</div>' +
-          '</article>';
-        }).join("");
-      }
+function computeGlobalStats(){
+  let ban=0, kick=0, warn=0;
+  BANS.forEach(u=>{
+    const s = u.stats || {};
+    ban += s.ban || 0;
+    kick += s.kick || 0;
+    warn += s.warn || 0;
+  });
+  statBan.textContent = ban;
+  statKick.textContent = kick;
+  statWarn.textContent = warn;
+}
 
-      pages.replaceChildren();
-      if (totalPages <= 1) return;
-      for (let index = 1; index <= totalPages; index += 1) {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.textContent = String(index);
-        button.className = index === page ? "active" : "";
-        button.setAttribute("aria-label", "Page " + index);
-        if (index === page) button.setAttribute("aria-current", "page");
-        button.addEventListener("click", () => { page = index; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
-        pages.appendChild(button);
-      }
-    }
+function applyFilters(){
+  const q = search.value.trim().toLowerCase();
+  const mod = modFilter.value;
+  const sort = sortBy.value;
 
-    search.addEventListener("input", () => {
-      const query = search.value.trim().toLowerCase();
-      filtered = BANS.filter((user) => {
-        const name = String(user && user.name || "").toLowerCase();
-        const id = String(user && user.id || "").toLowerCase();
-        return name.includes(query) || id.includes(query);
-      });
-      page = 1;
-      render();
-    });
+  filtered = BANS.filter(u=>{
+    const matchQ = !q || u.name.toLowerCase().includes(q) || (u.id && u.id.toLowerCase().includes(q));
+    const matchMod = !mod || u.moderator === mod;
+    return matchQ && matchMod;
+  });
 
-    loadBans();
-  </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5"}' crossorigin="anonymous"></script>
+  filtered.sort((a,b)=>{
+    if(sort === "date-desc") return parseDate(b.date) - parseDate(a.date);
+    if(sort === "date-asc") return parseDate(a.date) - parseDate(b.date);
+    if(sort === "bans-desc") return ((b.stats && b.stats.ban)||0) - ((a.stats && a.stats.ban)||0);
+    if(sort === "bans-asc") return ((a.stats && a.stats.ban)||0) - ((b.stats && b.stats.ban)||0);
+    return 0;
+  });
+
+  page = 1;
+  render();
+}
+
+function render(){
+  const q = search.value.trim();
+  const start=(page-1)*PAGE_SIZE;
+  const items=filtered.slice(start,start+PAGE_SIZE);
+
+  count.textContent=`${filtered.length} membre${filtered.length>1?"s":""}`;
+
+  if(!items.length){
+    list.innerHTML='<div class="empty">Aucun membre trouvé.</div>';
+  }else{
+    list.innerHTML=items.map(u=>{
+      const stats = u.stats || { kick:0, warn:0, ban:0 };
+      return `
+      <div class="card">
+        <div class="card-header">
+          <img src="https://cdn.discordapp.com/emojis/1463899019729309885.png" alt="">
+          <span>VVs Bot • Modération VRChat</span>
+        </div>
+        <div class="card-title">🔨 Ban VRChat</div>
+
+        <div class="fields">
+          <div class="field">
+            <div class="field-label">👤 Membre VRChat</div>
+            <div class="field-value"><a href="${escapeHtml(u.profile)}" target="_blank" rel="noopener">${highlight(u.name, q)}</a></div>
+          </div>
+          <div class="field">
+            <div class="field-label">🛡️ Modérateur VRChat</div>
+            <div class="field-value">${escapeHtml(u.moderator || "?")}</div>
+          </div>
+        </div>
+
+        <div class="history">
+          <span>📊 <b>Historique de ce membre</b></span>
+          <span class="pill k-kick">Kick (${stats.kick})</span>
+          <span class="pill k-warn">Warn (${stats.warn})</span>
+          <span class="pill k-ban">Ban (${stats.ban})</span>
+        </div>
+
+        <div class="detail">📝 ${escapeHtml(u.reason)}</div>
+
+        ${u.avatar ? `<img class="avatar-big" src="${escapeHtml(u.avatar)}" alt="">` : ""}
+
+        <div class="footer-row">
+          <span>VVs Bot${u.memberSince ? ` • Membre depuis le ${escapeHtml(u.memberSince)}` : ""}</span>
+          <span>Banni le ${escapeHtml(u.date)}</span>
+        </div>
+
+        <a class="profile-btn" href="${escapeHtml(u.profile)}" target="_blank" rel="noopener">🔗 Voir le profil VRChat</a>
+      </div>
+    `;
+    }).join("");
+  }
+
+  const total=Math.ceil(filtered.length/PAGE_SIZE);
+  pages.innerHTML="";
+  if(total<=1)return;
+  for(let i=1;i<=total;i++){
+    const b=document.createElement("button");
+    b.textContent=i;
+    b.className=i===page?"active":"";
+    b.onclick=()=>{page=i;render()};
+    pages.appendChild(b);
+  }
+}
+
+search.addEventListener("input", applyFilters);
+modFilter.addEventListener("change", applyFilters);
+sortBy.addEventListener("change", applyFilters);
+
+loadBans();
+</script>
 </body>
 </html>
