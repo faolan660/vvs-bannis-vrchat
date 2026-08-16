@@ -4,7 +4,14 @@
     "id": "usr_16e083db-c498-4063-b974-f3e95e9a94a4",
     "date": "16/08/2026",
     "reason": "User Okyo 94a4 was banned by Ω〘faolan〙Ω.",
-    "avatar": "",
-    "profile": "https://vrchat.com/home/user/usr_16e083db-c498-4063-b974-f3e95e9a94a4"
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_7689f4fe-e991-4f30-94f7-00e353a1c581/1/256",
+    "profile": "https://vrchat.com/home/user/usr_16e083db-c498-4063-b974-f3e95e9a94a4",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2024-11-01",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 2
+    }
   }
 ]
