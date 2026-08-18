@@ -1,5 +1,20 @@
 [
   {
+    "name": "angemort",
+    "id": "usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
+    "date": "18/08/2026",
+    "reason": "User angemort was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_8b07e78c-dcdd-4e67-a95d-85c73c91355f/1/256",
+    "profile": "https://vrchat.com/home/user/usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2021-12-07",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "SkYz I Sh0oTer",
     "id": "usr_38a2621a-7a82-49bf-97f2-b9c20d3aadd0",
     "date": "18/08/2026",
