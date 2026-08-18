@@ -1,5 +1,20 @@
 [
   {
+    "name": "~TOMATE~",
+    "id": "usr_6b639913-360e-48c8-b126-eabc6f8c5084",
+    "date": "18/08/2026",
+    "reason": "Balle perdue des bans de ARKANA",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_26733c04-352a-40f7-be97-e4215677f186/2/256",
+    "profile": "https://vrchat.com/home/user/usr_6b639913-360e-48c8-b126-eabc6f8c5084",
+    "moderator": "Ajouté manuellement (.exe)",
+    "memberSince": "2024-05-22",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "Wjzz b26b",
     "id": "usr_66affa7e-0dda-4c1d-9a12-9e20c329b26b",
     "date": "18/08/2026",
