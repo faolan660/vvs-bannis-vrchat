@@ -1,5 +1,20 @@
 [
   {
+    "name": "lusacha",
+    "id": "usr_9a80fb35-2405-4c06-bcc4-3b63976ce72e",
+    "date": "18/08/2026",
+    "reason": "User lusacha was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_0e8c4e32-7444-44ea-ade4-313c010d4bae/1/256",
+    "profile": "https://vrchat.com/home/user/usr_9a80fb35-2405-4c06-bcc4-3b63976ce72e",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2025-04-22",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "taiss",
     "id": "usr_6ed770d8-8587-40fb-8a43-504ab143643a",
     "date": "18/08/2026",
@@ -94,7 +109,7 @@
     "id": "usr_0f07e3ba-5eb8-4c55-bd95-168655a571e4",
     "date": "18/08/2026",
     "reason": "User loup74520 was preemptively banned by Ω〘faolan〙Ω.",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_e623d96d-fa7c-42cc-a86d-770493fab273/1/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_784ad782-75a7-434e-aa33-8646b4f38616/2/256",
     "profile": "https://vrchat.com/home/user/usr_0f07e3ba-5eb8-4c55-bd95-168655a571e4",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2024-04-17",
