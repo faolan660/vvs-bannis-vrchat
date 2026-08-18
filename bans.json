@@ -1,5 +1,20 @@
 [
   {
+    "name": "Emy044",
+    "id": "usr_0ae07913-f323-4f72-aadc-6bf78be695dd",
+    "date": "18/08/2026",
+    "reason": "User Emy044 was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_8a624587-9a56-481a-9b47-61d8474eadfa/1/256",
+    "profile": "https://vrchat.com/home/user/usr_0ae07913-f323-4f72-aadc-6bf78be695dd",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2024-12-25",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "angemort",
     "id": "usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
     "date": "18/08/2026",
