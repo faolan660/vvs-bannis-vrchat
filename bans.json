@@ -1,10 +1,25 @@
 [
   {
+    "name": "SharkyCat1",
+    "id": "usr_03a9329c-e935-444c-a094-268ab83412b3",
+    "date": "18/08/2026",
+    "reason": "User SharkyCat1 was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_0691f094-e0b7-480c-adfb-db56401f1320/1/256",
+    "profile": "https://vrchat.com/home/user/usr_03a9329c-e935-444c-a094-268ab83412b3",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2025-12-29",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "loup74520",
     "id": "usr_0f07e3ba-5eb8-4c55-bd95-168655a571e4",
     "date": "18/08/2026",
     "reason": "User loup74520 was preemptively banned by Ω〘faolan〙Ω.",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_e623d96d-fa7c-42cc-a86d-770493fab273/1/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_ba0c38a7-1e26-43eb-8f43-f18c26775536/2/256",
     "profile": "https://vrchat.com/home/user/usr_0f07e3ba-5eb8-4c55-bd95-168655a571e4",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2024-04-17",
