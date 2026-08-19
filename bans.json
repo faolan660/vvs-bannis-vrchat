@@ -1,5 +1,20 @@
 [
   {
+    "name": "Blanc ≻ Noir c703",
+    "id": "usr_d77782c4-683a-4f2e-9717-948f3027c703",
+    "date": "20/08/2026",
+    "reason": "User Blanc ≻ Noir c703 was preemptively banned by Ω〘ORACLE.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_3186fdc6-4df9-481f-a5e6-f80f6b8cca74/2/256",
+    "profile": "https://vrchat.com/home/user/usr_d77782c4-683a-4f2e-9717-948f3027c703",
+    "moderator": "Ω〘ORACLE",
+    "memberSince": "2023-11-15",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "LaLo_DOZ",
     "id": "usr_56c6d083-a810-4149-a6e1-423a924d697e",
     "date": "18/08/2026",
@@ -199,7 +214,7 @@
     "id": "usr_0f07e3ba-5eb8-4c55-bd95-168655a571e4",
     "date": "18/08/2026",
     "reason": "fou du vff",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_c0d62517-43fd-416d-931f-91ce3d8dc582/1/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_7445f860-c9ae-4590-aabd-76ec8a327806/1/256",
     "profile": "https://vrchat.com/home/user/usr_0f07e3ba-5eb8-4c55-bd95-168655a571e4",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2024-04-17",
@@ -244,7 +259,7 @@
     "id": "usr_af776e9f-04f1-41d2-bd03-09ae8dcfcbf0",
     "date": "18/08/2026",
     "reason": "problématique",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_a47c2954-4f6d-44ea-a76f-9ca27ec91818/2/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_857af2a0-b6f9-4132-a9aa-8e339499fb3c/1/256",
     "profile": "https://vrchat.com/home/user/usr_af776e9f-04f1-41d2-bd03-09ae8dcfcbf0",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2024-07-04",
@@ -274,7 +289,7 @@
     "id": "usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
     "date": "18/08/2026",
     "reason": "fou du vff",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_31511de5-0f52-4916-89bb-ae5ee275f8a2/1/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_ba4bbaa8-a8b8-414d-9cbb-4a5e0c998829/1/256",
     "profile": "https://vrchat.com/home/user/usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2021-12-07",
