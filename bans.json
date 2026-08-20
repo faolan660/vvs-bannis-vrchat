@@ -1,5 +1,20 @@
 [
   {
+    "name": "CHABALUX",
+    "id": "usr_37469fc1-ef36-4813-b9d7-d26f63c1dfc8",
+    "date": "21/08/2026",
+    "reason": "User CHABALUX was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_6a15ea95-33e2-4022-b313-58481915e92f/3/256",
+    "profile": "https://vrchat.com/home/user/usr_37469fc1-ef36-4813-b9d7-d26f63c1dfc8",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2023-10-17",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "issakhlass f3fc",
     "id": "usr_e42e651b-5231-4fa5-bca5-2781e816f3fc",
     "date": "21/08/2026",
