@@ -1,5 +1,20 @@
 [
   {
+    "name": "roan2_tiktok",
+    "id": "usr_617518c2-d8a6-4b12-88b2-7d0a43155490",
+    "date": "21/08/2026",
+    "reason": "User roan2_tiktok was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_6bc60bb2-c4b8-461c-a00a-b1c51305fe77/2/256",
+    "profile": "https://vrchat.com/home/user/usr_617518c2-d8a6-4b12-88b2-7d0a43155490",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2026-08-20",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "CHABALUX",
     "id": "usr_37469fc1-ef36-4813-b9d7-d26f63c1dfc8",
     "date": "21/08/2026",
