@@ -1,5 +1,20 @@
 [
   {
+    "name": "КидЭлиотт",
+    "id": "usr_5c2c6d6f-2647-454a-a67f-356f1cb3ac82",
+    "date": "23/08/2026",
+    "reason": "User КидЭлиотт was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_0e8c4e32-7444-44ea-ade4-313c010d4bae/1/256",
+    "profile": "https://vrchat.com/home/user/usr_5c2c6d6f-2647-454a-a67f-356f1cb3ac82",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2025-03-02",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "SmegmaMaster",
     "id": "usr_0008a3e9-4b59-43a5-85e1-6f175f9559d9",
     "date": "22/08/2026",
@@ -304,7 +319,7 @@
     "id": "usr_ac6ced89-537b-44ff-8623-2f3c149a3e93",
     "date": "18/08/2026",
     "reason": "fou du vff",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_35debae0-d351-4199-9e64-9cbc69f4c138/3/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_93e2fa63-11d1-4017-851f-08ab168b700f/1/256",
     "profile": "https://vrchat.com/home/user/usr_ac6ced89-537b-44ff-8623-2f3c149a3e93",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2024-12-26",
@@ -349,7 +364,7 @@
     "id": "usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
     "date": "18/08/2026",
     "reason": "fou du vff",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_39ca76f5-3c68-4c28-9b53-5b995c041e53/1/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_8b07e78c-dcdd-4e67-a95d-85c73c91355f/1/256",
     "profile": "https://vrchat.com/home/user/usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2021-12-07",
