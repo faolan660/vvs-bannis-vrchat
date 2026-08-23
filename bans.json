@@ -1,5 +1,20 @@
 [
   {
+    "name": "LRzYY 75ff",
+    "id": "usr_c0ea2adc-2bf3-4f98-91fa-125e230775ff",
+    "date": "23/08/2026",
+    "reason": "User LRzYY 75ff was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_7d55996f-c71c-4692-acdc-0dc50e784473/1/256",
+    "profile": "https://vrchat.com/home/user/usr_c0ea2adc-2bf3-4f98-91fa-125e230775ff",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2026-08-21",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 1
+    }
+  },
+  {
     "name": "КидЭлиотт",
     "id": "usr_5c2c6d6f-2647-454a-a67f-356f1cb3ac82",
     "date": "23/08/2026",
@@ -229,7 +244,7 @@
     "id": "usr_273e2be6-dc6c-4bd3-81e2-d41f3aeae6e9",
     "date": "18/08/2026",
     "reason": "ban liste ARKANA",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_2ccceec7-0887-4467-9d27-fc3c41dcb392/3/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_20f66737-fd4f-44f1-9e5b-b15d1383ed06/1/256",
     "profile": "https://vrchat.com/home/user/usr_273e2be6-dc6c-4bd3-81e2-d41f3aeae6e9",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2019-12-15",
@@ -319,7 +334,7 @@
     "id": "usr_ac6ced89-537b-44ff-8623-2f3c149a3e93",
     "date": "18/08/2026",
     "reason": "fou du vff",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_93e2fa63-11d1-4017-851f-08ab168b700f/1/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_35debae0-d351-4199-9e64-9cbc69f4c138/3/256",
     "profile": "https://vrchat.com/home/user/usr_ac6ced89-537b-44ff-8623-2f3c149a3e93",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2024-12-26",
@@ -334,7 +349,7 @@
     "id": "usr_af776e9f-04f1-41d2-bd03-09ae8dcfcbf0",
     "date": "18/08/2026",
     "reason": "problématique",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_ec592bc3-f212-48c9-887d-8126637a9c74/2/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_e547ae01-a0cb-4c75-9198-541487bb0c18/1/256",
     "profile": "https://vrchat.com/home/user/usr_af776e9f-04f1-41d2-bd03-09ae8dcfcbf0",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2024-07-04",
@@ -364,7 +379,7 @@
     "id": "usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
     "date": "18/08/2026",
     "reason": "fou du vff",
-    "avatar": "https://api.vrchat.cloud/api/1/image/file_8b07e78c-dcdd-4e67-a95d-85c73c91355f/1/256",
+    "avatar": "https://api.vrchat.cloud/api/1/image/file_ba4bbaa8-a8b8-414d-9cbb-4a5e0c998829/1/256",
     "profile": "https://vrchat.com/home/user/usr_6fb96a0b-00d6-4632-9d1e-5a841b5703a8",
     "moderator": "Ω〘faolan〙Ω",
     "memberSince": "2021-12-07",
