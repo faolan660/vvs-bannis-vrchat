@@ -1,5 +1,35 @@
 [
   {
+    "name": "COTOVIOLEUR cd6a",
+    "id": "usr_9bd5dd22-d3ba-4bb1-bd59-2da66862cd6a",
+    "date": "20/09/2026",
+    "reason": "User COTOVIOLEUR cd6a was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "",
+    "profile": "https://vrchat.com/home/user/usr_9bd5dd22-d3ba-4bb1-bd59-2da66862cd6a",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2025-06-09",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 2
+    }
+  },
+  {
+    "name": "antifurry2mort",
+    "id": "usr_0fd3d7e2-ceb3-45d2-8d3b-b030730721f4",
+    "date": "20/09/2026",
+    "reason": "User antifurry2mort was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "",
+    "profile": "https://vrchat.com/home/user/usr_0fd3d7e2-ceb3-45d2-8d3b-b030730721f4",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2026-08-29",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 2
+    }
+  },
+  {
     "name": "FluffyOrca5222 eee3",
     "id": "usr_75881604-24cd-491a-be36-70f31da5eee3",
     "date": "20/09/2026",
@@ -10,36 +40,6 @@
     "memberSince": "2026-08-03",
     "stats": {
       "kick": 2,
-      "warn": 0,
-      "ban": 1
-    }
-  },
-  {
-    "name": "COTOVIOLEUR cd6a",
-    "id": "usr_9bd5dd22-d3ba-4bb1-bd59-2da66862cd6a",
-    "date": "29/08/2026",
-    "reason": "problematique",
-    "avatar": "",
-    "profile": "https://vrchat.com/home/user/usr_9bd5dd22-d3ba-4bb1-bd59-2da66862cd6a",
-    "moderator": "Ω〘faolan〙Ω",
-    "memberSince": "2025-06-09",
-    "stats": {
-      "kick": 0,
-      "warn": 0,
-      "ban": 1
-    }
-  },
-  {
-    "name": "antifurry2mort",
-    "id": "usr_0fd3d7e2-ceb3-45d2-8d3b-b030730721f4",
-    "date": "29/08/2026",
-    "reason": "antifurs",
-    "avatar": "",
-    "profile": "https://vrchat.com/home/user/usr_0fd3d7e2-ceb3-45d2-8d3b-b030730721f4",
-    "moderator": "Ω〘faolan〙Ω",
-    "memberSince": "2026-08-29",
-    "stats": {
-      "kick": 0,
       "warn": 0,
       "ban": 1
     }
