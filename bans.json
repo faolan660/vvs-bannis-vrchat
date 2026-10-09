@@ -1,5 +1,20 @@
 [
   {
+    "name": "BunnyFromH3ll",
+    "id": "usr_fcb4aca9-6d57-4fcd-ba35-82d127b2e103",
+    "date": "09/10/2026",
+    "reason": "User BunnyFromH3ll was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "",
+    "profile": "https://vrchat.com/home/user/usr_fcb4aca9-6d57-4fcd-ba35-82d127b2e103",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2026-03-13",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 2
+    }
+  },
+  {
     "name": "itz_octofish",
     "id": "usr_de4e7c3d-d254-4cd8-a76f-9a4f802293c1",
     "date": "09/10/2026",
@@ -12,21 +27,6 @@
       "kick": 0,
       "warn": 0,
       "ban": 2
-    }
-  },
-  {
-    "name": "BunnyFromH3ll",
-    "id": "usr_fcb4aca9-6d57-4fcd-ba35-82d127b2e103",
-    "date": "09/10/2026",
-    "reason": "User BunnyFromH3ll was preemptively banned by Ω〘faolan〙Ω.",
-    "avatar": "",
-    "profile": "https://vrchat.com/home/user/usr_fcb4aca9-6d57-4fcd-ba35-82d127b2e103",
-    "moderator": "Ω〘faolan〙Ω",
-    "memberSince": "2026-03-13",
-    "stats": {
-      "kick": 0,
-      "warn": 0,
-      "ban": 1
     }
   },
   {
