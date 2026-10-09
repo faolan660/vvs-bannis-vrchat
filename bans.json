@@ -1,5 +1,20 @@
 [
   {
+    "name": "Mirzax",
+    "id": "usr_9fb237f5-291f-49d3-95bb-60c84e8c8cc1",
+    "date": "09/10/2026",
+    "reason": "User Mirzax was preemptively banned by Ω〘faolan〙Ω.",
+    "avatar": "",
+    "profile": "https://vrchat.com/home/user/usr_9fb237f5-291f-49d3-95bb-60c84e8c8cc1",
+    "moderator": "Ω〘faolan〙Ω",
+    "memberSince": "2020-06-28",
+    "stats": {
+      "kick": 0,
+      "warn": 0,
+      "ban": 2
+    }
+  },
+  {
     "name": "BunnyFromH3ll",
     "id": "usr_fcb4aca9-6d57-4fcd-ba35-82d127b2e103",
     "date": "09/10/2026",
@@ -27,21 +42,6 @@
       "kick": 0,
       "warn": 0,
       "ban": 2
-    }
-  },
-  {
-    "name": "Mirzax",
-    "id": "usr_9fb237f5-291f-49d3-95bb-60c84e8c8cc1",
-    "date": "02/10/2026",
-    "reason": "Antifurs, manque de respect et aucune répartie",
-    "avatar": "",
-    "profile": "https://vrchat.com/home/user/usr_9fb237f5-291f-49d3-95bb-60c84e8c8cc1",
-    "moderator": "Ω〘faolan〙Ω",
-    "memberSince": "2020-06-28",
-    "stats": {
-      "kick": 0,
-      "warn": 0,
-      "ban": 1
     }
   },
   {
